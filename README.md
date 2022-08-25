@@ -17,7 +17,7 @@ Currently none
 Tracy Annette Whitefield - Owner, Allyssabeth's Crochet
 
 ## Designer
-Eron Whitefield     eron.whitefield@gmail.com
+Eron Whitefield - eron.whitefield@gmail.com
 
 ## Version History
 0.0 Just getting started
