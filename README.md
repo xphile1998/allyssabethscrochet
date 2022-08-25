@@ -14,7 +14,7 @@ Requires:
 Currently none
 
 ## Client
-Annette Whitefield - Owner, Allyssabeth's Crochet
+Tracy Annette Whitefield - Owner, Allyssabeth's Crochet
 
 ## Designer
 Eron Whitefield     eron.whitefield@gmail.com
