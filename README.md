@@ -12,7 +12,11 @@ Requires:
 
 ### Help and/or Known Issues
 Currently none
-## Author
+
+## Client
+Annette Whitefield - Owner, Allyssabeth's Crochet
+
+## Designer
 Eron Whitefield     eron.whitefield@gmail.com
 
 ## Version History
