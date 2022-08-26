@@ -17,10 +17,10 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: var(--accent1-color);  /* headlines on a white background */ 
-  --headline-color-on-color: var(--accent3-color); /* headlines on a colored background */ 
-  --paragraph-color-on-white: #050505; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: #ffffff; /* paragraph text on a colored background */ 
-  --text-background-color: var(--secondary-color);
+  --headline-color-on-color: var(--accent3-color);  /* headlines on a colored background */ 
+  --paragraph-color-on-white: black;              /* paragraph text on a white background */ 
+  --paragraph-color-on-color: var(--accent3-color); /* paragraph text on a colored background */ 
+  --text-background-color: var(--secondary-color);  
   --nav-link-color: var(--accent3-color);
   --nav-background-color: var(--secondary-color);
   --nav-hover-link-color: var(--secondary-color);
@@ -32,21 +32,18 @@ Fonts are separated by a | */
 html {
   background-color: var(--primary-color);
 }
+
 body {
   max-width: 1400px;
   margin: 0 auto;
   background-color: var(--accent2-color);
   padding: 1em;
 }
+
 img {
   max-width: 100%;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
+
 header {
   padding: 1em;
   text-align: center;
@@ -57,29 +54,41 @@ header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 h1 {
   font-size: 80px;
-  /* margin-top: 10px;
-  margin-bottom: 10px; */
 }
-
 h2 {
   font-size: 72px;
-  /* margin-top: 30px; */
 }
-
 h3 {
   font-size: 48px;
 }
-
 h4 {
   font-size: 28px;
+}
+h5 {
+  font-size: 22px;
+}
+h6 {
+  font-size: 18px;
 }
 
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color);
   padding: 1em;
+}
+
+table {
+  font-family: var(--paragraph-font);
+  font-weight: bold;
 }
 
 .colors {
@@ -91,13 +100,14 @@ p {
 .colors th {
   background-color: #999;
 }
-.colors td{
+.colors td {
   width: 20%;
   height: 3em;
 }
 
 .primary {
   background-color: var(--primary-color);
+  color: black;
 }
 .secondary {
   background-color: var(--secondary-color);
@@ -109,10 +119,11 @@ p {
 }
 .accent2{
   background-color: var(--accent2-color);
+  color: black;
 }
 .accent3 {
-  background-color: #050505;
-  color: white;
+  background-color: var(--accent3-color);
+  color: black;
 }
 
 p.colored {
@@ -130,7 +141,6 @@ nav {
 nav > ul {
   list-style-type: none;
   display: flex;
-
 }
 nav a {
   padding:1em;
@@ -142,13 +152,22 @@ nav a:link, nav a:visited {
 nav a:hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
+  border-radius: 10px;
 }
 
 .sitemap {
+  background-color: var(--primary-color);
   text-align: center;
   align-content: center;
+  padding: 20px 0px 20px 0px;
+  border-radius: 20px;
 }
 
+.sm-img {
+  border: 5px black;
+}
+
+/* Alternate GRID-based method of doing the Site Map. To use, remove comment tags. */
 /* .sitemap {
   display: grid;
   justify-content: center;
@@ -161,8 +180,9 @@ nav a:hover {
     ". . . . . . . . . . . ."
     "page2 page2 . page3 page3 . . page4 page4 . page5 page5"
     ". . . . . . . . . . . .";
-} */
-/* .sm-home {
+}
+
+.sm-home {
   grid-area: home;
   background-color: #999;
   border: 1px solid;
@@ -196,25 +216,21 @@ nav a:hover {
 .top {
   grid-area: top;
   border-left: 1px solid;
-} */
-
-/* .left {
+}
+.left {
   grid-area: left;
   border-top: 1px solid;
   border-left: 1px solid;
 }
-
 .right {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
 }
-
 .line {
   grid-area: line;
   border-top: 1px solid;
 }
-
 .blank {
   grid-area: blank;
   border-top: 1px sold
