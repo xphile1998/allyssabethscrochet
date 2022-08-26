@@ -144,7 +144,7 @@ nav a:hover {
   background-color: var(--nav-hover-background-color);
 }
 
-.sitemap {
+/* .sitemap {
   display: grid;
   justify-content: center;
 
@@ -156,13 +156,15 @@ nav a:hover {
     ". . . . . . . . . . . ."
     "page2 page2 . page3 page3 . . page4 page4 . page5 page5"
     ". . . . . . . . . . . .";
-}
-.sitemap > div {
+} */
+
+.sitemap {
 
   text-align: center;
+  align-content: center;
 
 }
-.sm-home {
+/* .sm-home {
   grid-area: home;
   background-color: #999;
   border: 1px solid;
@@ -196,7 +198,7 @@ nav a:hover {
 .top {
   grid-area: top;
   border-left: 1px solid;
-}
+} */
 
 /* .left {
   grid-area: left;
