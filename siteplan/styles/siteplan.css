@@ -164,7 +164,7 @@ nav a:hover {
 }
 
 .sm-img {
-  border: 5px black;
+  border: 5px var(--secondary-color);
 }
 
 /* Alternate GRID-based method of doing the Site Map. To use, remove comment tags. */
